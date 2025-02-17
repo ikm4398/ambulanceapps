@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: AMB {YYYY} {###}",
+ "creation": "2025-02-14 12:57:10.595808",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "driver_name",
+  "driver_number",
+  "ambulance_license_number",
+  "country",
+  "state",
+  "column_break_jzfr",
+  "district",
+  "city",
+  "ward_sector_number",
+  "address_line",
+  "full_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Driver Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_number",
+   "fieldtype": "Phone",
+   "label": "Driver Number"
+  },
+  {
+   "fieldname": "ambulance_license_number",
+   "fieldtype": "Data",
+   "label": "Ambulance License Number"
+  },
+  {
+   "default": "Nepal",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jzfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Select",
+   "label": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_address",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Full Address",
+   "options": "f\"{doc.address_line}, {doc.city} {doc. ward_sector_number}, {doc.district}, {doc.state}, {doc.country}\"\n"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line",
+   "fieldtype": "Data",
+   "label": "Address Line",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward_sector_number",
+   "fieldtype": "Int",
+   "label": "Ward/ Sector Number",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-16 17:47:40.992195",
+ "modified_by": "Administrator",
+ "module": "Ambulanceapps",
+ "name": "New Ambulance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

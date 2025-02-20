@@ -5,18 +5,35 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "date_of_birth"
+  "date_of_birth",
+  "join_date",
+  "section_break_tnpn",
+  "table_npwu"
  ],
  "fields": [
   {
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth"
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Join Date"
+  },
+  {
+   "fieldname": "section_break_tnpn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_npwu",
+   "fieldtype": "Table",
+   "options": "Test Items"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-19 13:55:10.039464",
+ "modified": "2025-02-19 16:31:57.484167",
  "modified_by": "Administrator",
  "module": "Ambulanceapps",
  "name": "test date",

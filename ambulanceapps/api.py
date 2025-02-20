@@ -11,4 +11,3 @@ def get_districts(state):
 @frappe.whitelist(allow_guest=True)
 def get_cities(district):
     return frappe.get_all("City List", filters={"district_name": district}, fields=["city_name"])
-# hello this is git changes

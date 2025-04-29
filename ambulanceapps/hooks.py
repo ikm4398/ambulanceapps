@@ -256,4 +256,9 @@ fixtures=[{
     ]]
 }]
 
-# hello this is git changes
+# Hook.py
+doc_events = {
+    "Employee Checkin": {
+        "after_insert": "ambulanceapps.auto_attendance.create_or_update_attendance"
+    }
+}
